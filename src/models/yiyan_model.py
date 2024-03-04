@@ -5,8 +5,8 @@ from .base_model import API_Model
 
 class YiYan_Model(API_Model):
     def __init__(self, 
-                 api_key="m8ULmlwjjg3bAn8LzG7HqOyC",
-                 secret_key="DmHc4PC9En478FGoLRCNVPVMXdpDdIVT",
+                 api_key="",
+                 secret_key="",
                  version="ERNIE-Bot-4.0",
                  stop_ids=[]):
         super().__init__(api_key, stop_ids)

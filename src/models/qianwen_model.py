@@ -3,7 +3,7 @@ from .base_model import API_Model
 
 class QianWen_Model(API_Model):
     def __init__(self, 
-                 api_key="sk-51e0740ed82b4fe79983d1d5e18d0f77",
+                 api_key="",
                  version="qwen_max",
                  stop_ids=[]):
         super().__init__(api_key, stop_ids)

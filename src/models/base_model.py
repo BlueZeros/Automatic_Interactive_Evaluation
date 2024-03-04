@@ -5,19 +5,6 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, StoppingCriteria, 
 from utils.general_utils import disable_torch_init
 
 LOCAL_MODEL_PATHS = {
-    "baichuan-13b": "/remote-home/yushengliao/yushengliao/Medical_Consultation_Evaluation/models/Baichuan-13B-Chat",
-    "internlm-7b": "/remote-home/yushengliao/yushengliao/Medical_Consultation_Evaluation/models/internlm-chat-7b",
-    "internlm-20b": "/remote-home/yushengliao/yushengliao/Medical_Consultation_Evaluation/models/internlm-chat-20b",
-    "vicunav1.1-7b": "/remote-home/yushengliao/yushengliao/Medical_Consultation_Evaluation/models/vicuna-7b",
-    "vicunav1.1-13b": "/remote-home/yushengliao/yushengliao/Medical_Consultation_Evaluation/models/vicuna-13b",
-    "vicunav1.5-7b": "/remote-home/yushengliao/yushengliao/Medical_Consultation_Evaluation/models/vicuna-7b-v1.5",
-    "vicunav1.5-13b": "/remote-home/yushengliao/yushengliao/Medical_Consultation_Evaluation/models/vicuna-13b-v1.5",
-    "llama2-7b": "/remote-home/yushengliao/yushengliao/Medical_Consultation_Evaluation/models/llama-2-7b-chat-hugging",
-    "llama2-13b": "/remote-home/yushengliao/yushengliao/Medical_Consultation_Evaluation/models/llama-2-13b-chat-hugging",
-    "huatuo-13b": "/remote-home/yushengliao/yushengliao/Medical_Consultation_Evaluation/models/Baichuan-HuatuoGPT2-13B",
-    "chatglm3-6b": "/remote-home/yushengliao/yushengliao/Medical_Consultation_Evaluation/models/chatglm3-6b",
-    "ming-bloomz-7b": "/remote-home/yushengliao/yushengliao/Medical_Consultation_Evaluation/models/MING-7b",
-    "medicalgpt-baichuan-13b": "/remote-home/yushengliao/yushengliao/Medical_Consultation_Evaluation/models/MedicalGPT-baichuan-13b",
 }
 
 class Base_Model:

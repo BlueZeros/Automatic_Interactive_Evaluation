@@ -11,8 +11,7 @@ import pytz
 class OpenAI_Model(API_Model):
     def __init__(self, 
                  model_type="gpt-3.5-turbo-1106",
-                #  api_key="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",
-                api_key="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",
+                api_key="",
                  stop_ids=[]):
         super().__init__(api_key, stop_ids)
         self.t_start = time.perf_counter()
@@ -20,22 +19,6 @@ class OpenAI_Model(API_Model):
         self.client = OpenAI(
             api_key=api_key
         )
-
-        self.log_file = f"../logs/openai_logs/{self.get_time()}.json"
-        while os.path.exists(self.log_file):
-            self.log_file = f"../logs/openai_logs/{self.get_time()}.json"
-        
-        self.cost_log = {
-            "model_type": self.model_type,
-            "time_start":self.get_time(), 
-            "time_end": self.get_time(),
-            "input_tokens": 0, 
-            "output_tokens": 0, 
-            "dollar_cost": 0, 
-            }
-        
-        self.log()
-        # self.total_logs.append(self.cost_log)
     
     def get_logit_bias(self, state_num=4):
         return {(32+i):100 for i in range(state_num)}
