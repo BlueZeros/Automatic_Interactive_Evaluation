@@ -1,5 +1,5 @@
 # Automatic Interactive Evaluation
-This repo is for Automatic Interactive Evaluation (AIE) for assessing the medical consultation capacity of the LLMs.
+This repo is for [Automatic Interactive Evaluation (AIE) for assessing the medical consultation capacity of the LLMs](https://arxiv.org/pdf/2403.08495v2).
 
 ![Overvoew](imgs/overview.png)
 
@@ -98,3 +98,12 @@ output_root=../results/your_results
 python ./eval/doctor_eval.py --folder-path $output_root/${data_name}$
 ```
 
+## Cite
+```latex
+@article{liao2024automatic,
+  title={Automatic Interactive Evaluation for Large Language Models with State Aware Patient Simulator},
+  author={Liao, Yusheng and Meng, Yutong and Wang, Yuhao and Liu, Hongcheng and Wang, Yanfeng and Wang, Yu},
+  journal={arXiv preprint arXiv:2403.08495},
+  year={2024}
+}
+```
